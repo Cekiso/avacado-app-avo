@@ -10,6 +10,16 @@ h2 {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    font-size: 5vh;
+}
+
 .container {
     margin: auto;
     width: 80%;
@@ -19,4 +29,20 @@ h2 {
 img {
     height: 30vh;
     display: inline-block;
+}
+
+button {
+    border: 2px solid black;
+    font: 40%;
+    padding: 15px 50px;
+    margin: 30px 2px;
+}
+
+button:hover {
+    background-color: #ec8fd0
+}
+
+button:active {
+    background-color: #a3a8a3;
+    transform: translateY(2px);
 }

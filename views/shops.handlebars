@@ -1,10 +1,11 @@
 <h2>Shops</h2>
 
 <ul class="list">
-    {{#each Shops}}
+    {{#each shop}}
 <tr>
-<td><a class="nameLink" href="/shops/{{name}}">{{name}}</a></td>
+<td><a class="nameLink" href="/deals/{{this.name}}">{{this.name}}</a></td>
 </tr>
 <li></li>
     {{/each}}
 </ul>
+{{!-- <div><button class="Bttn" type="submit"><a href='/'>Home</a></button> --}}

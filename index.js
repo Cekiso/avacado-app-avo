@@ -4,6 +4,7 @@ const avo = require('./avo-shopper')
 const app = express();
 
 const pg = require('pg');
+const avoShopper = require('./avo-shopper');
 const Pool = pg.Pool;
 
 
@@ -39,16 +40,26 @@ let counter = 0;
 app.get('/', async function(req, res) {
     res.render('index', {
         counter,
-        shop: await avocado.listShops()
+        shop: await avocado.listShops(),
+
+
+
     });
 });
 app.get('/shops', async function(req, res) {
     res.render('shops', {
-        shop: await avocado.listShops()
+        shop: await avocado.listShops(),
+
     })
 })
 app.post('/Avocado', async function(req, res) {
     res.render('index', {
+
+    })
+})
+app.get('/deals', async function(req, res) {
+    res.render('shops', {
+        deals: await avoShopper.createDeal()
 
     })
 })
