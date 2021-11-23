@@ -45,4 +45,6 @@ To get going:
 
 
 
+[![Build Status](https://app.travis-ci.com/Cekiso/fruits_basket.svg?branch=master)](https://app.travis-ci.com/Cekiso/fruits_basket)
+
 
